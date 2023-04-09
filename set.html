@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./catalog.css">
+    <link rel="stylesheet" href="./boats.css">
+    <link rel="stylesheet" href="./set.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="header d-flex">
+        <div class="header-elements1 d-flex">
+            <img src="./images/Frame 218.svg" alt="logo" class="logo">
+            <img src="./images/homedecor logo 1.svg" alt="logo" class="logo2">
+            <div class="header-elements d-flex flex-row">
+                <div class="instagram">
+                    <img src="./images/instagram.svg" alt="instagram" width="24px">
+                    <a href="https://www.instagram.com/">Новинки каждый день</a>
+                </div>
+                <div class="basket">
+                    <img src="./images/basket.svg" alt="basket">
+                    <a href="./set.html">Корзина</a>
+                </div>
+                <div class="basket2">
+                    <a href="./set.html" style="width: 24px; height: 24px;">
+                        <img src="./images/basket.svg" alt="basket">
+                    </a>
+                </div>
+                <!--Navbar-->
+                <nav class="navbar navbar-dark">
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler hamburger-button" type="button" data-toggle="collapse"
+                        aria-expanded="false" aria-label="Toggle navigation" onclick="Nav()" style="z-index: 3;">
+                        <div class="animated-icon"><span></span><span></span><span></span></div>
+                    </button>
+                </nav>
+                <div class="row">
+                    <div class="col-1 d-flex justify-content-center">
+                        <div id="mySidenav" class="sidenav" style="z-index: 5;">
+                            <a href="#">О нас</a>
+                            <a href="#">Отзывы</a>
+                            <a href="#">Сотрудничество</a>
+                            <a href="#">Рамы и крепления</a>
+                            <a href="#">Цены</a>
+                            <a href="#">Доставка и оплата</a>
+                            <a href="#">
+                                <div class="instagram">
+                                    <img src="./images/_Instagram.svg" alt="instagram" width="24px">
+                                    <a href="https://www.instagram.com/">Instagram</a>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="phone">
+                                    <img src="./images/tel2 icon.svg" alt="Phone">
+                                    <p>+993 62 07 53 35</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <nav> -->
+        <ul class="list d-flex flex-row flex-nowrap">
+            <li><a href="" id="nav-item-first">Ваши интерьеры</a></li>
+            <li><a href="">Топ25</a></li>
+            <li><a href="./catalog.html">Сезоны</a></li>
+            <li><a href="">Комнаты</a></li>
+            <li><a href="">Цвет</a></li>
+            <li><a href="">Природа</a></li>
+            <li><a href="">Растения</a></li>
+            <li><a href="">Графика</a></li>
+            <li><a href="">Фразы</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Животные</a></li>
+            <li><a href="">Еда</a></li>
+            <li><a href="">Винные карты</a></li>
+            <li><a href="" id="hidden-nav">Города</a></li>
+        </ul>
+        <!-- </nav> -->
+    </header>
+
+
+    <main>
+        <div class="routes d-flex flex-row">
+            <a href="./index.html">Главная ></a> <a href="./set.html"> Корзина</a>
+        </div>
+
+        <section class="page-content d-flex flex-row flex-wrap">
+            <div class="set d-flex flex-column">
+                <div class="set-text d-flex flex-column">
+                    <h2>Корзина</h2>
+                    <p>После оформления заказа, наш менеджер свяжеться с вами , для <br>
+                        согласования стоимости доставки. Сейчас вы ни за что не платите.</p>
+                </div>
+                <div class="set-content d-flex flex-row flex-wrap">
+                    <div class="set-pictures d-flex flex-column">
+                        <div class="picture picture1">
+                            <img src="./images/Frame 84.jpg" alt="">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal1">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal1">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 84.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture2">
+                            <img src="./images/Frame 84 (4).jpg" alt="" width="181px">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal2">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal2">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 84 (4).jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture3">
+                            <img src="./images/Frame 85.jpg" alt="">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal3">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal3">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 85.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture4">
+                            <img src="./images/Frame 84 (4).jpg" alt="" width="181px">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal4">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal4">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 84 (4).jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture5">
+                            <img src="./images/Frame 86.jpg" alt="">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal5">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal5">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 86.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture6">
+                            <img src="./images/Frame 84 (5).jpg" alt="" width="181px">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal6">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal6">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 84 (5).jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture7">
+                            <img src="./images/Frame 87.jpg" alt="">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal7">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal7">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 87.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picture picture8">
+                            <img src="./images/Frame 84 (4).jpg" alt="" width="181px">
+                            <button data-bs-toggle="modal" data-bs-target="#myModal8">
+                                <img src="./images/search-plus.svg" alt=""></button>
+                            <div class="modal" id="myModal8">
+                                <div class="modal-dialog modal-fullscreen-sm-down">
+                                    <div class="modal-content">
+                                        <img src="./images/Frame 84 (4).jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product d-flex flex-column flex-start">
+                        <div class="product-description description1">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Постер Солнечный лес</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>30х40 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus" id="minus">
+                                        </button>
+                                        <button id="number" value="1"> 1 </button>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus" id="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete1">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">100 ман.</button>
+                        </div>
+                        <div class="product-description description2">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Рама белая</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>30х40 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete" id="delete2">
+                                        <button>
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">50 ман.</button>
+                        </div>
+                        <div class="product-description description3">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Постер Коричневые лодочки</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>50х70 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete3">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">150 ман.</button>
+                        </div>
+                        <div class="product-description description4">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Рама белая</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>50х70 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete4">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">100 ман.</button>
+                        </div>
+                        <div class="product-description description5" id="product-5">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Постер Домик на озере</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>40х30 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete5">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">100 ман.</button>
+                        </div>
+                        <div class="product-description description6" id="product-6">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Рама белая</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>40х30 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete6">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">50 ман.</button>
+                        </div>
+                        <div class="product-description description7" id="product-7">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Постер Малахитовое озеро</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>40х50 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete7">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">100 ман.</button>
+                        </div>
+                        <div class="product-description description8">
+                            <div class="product-text d-flex flex-column">
+                                <h3>Рама белая</h3>
+                                <div class="numbers d-flex flex-row flex-wrap">
+                                    <div class="size d-flex flex-row flex-start">
+                                        <p>Размер: <span>40х50 см</span></p>
+                                    </div>
+                                    <div class="quantity d-flex flex-row">
+                                        <p>Количество: </p>
+                                        <button>
+                                            <img src="./images/minus.svg" alt="minus">
+                                        </button>
+                                        <span id="number"> 1 </span>
+                                        <button>
+                                            <img src="./images/plus.svg" alt="plus">
+                                        </button>
+                                    </div>
+                                    <span> | </span>
+                                    <div class="delete">
+                                        <button id="delete8">
+                                            <img src="./images/trash.jpg" alt="delete">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="price">100 ман.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order d-flex flex-column flex-start">
+                <h2>Оформление заказа</h2>
+                <div class="order-form d-flex flex-column flex-start flex-wrap">
+                    <form action="" method="get">
+                        <div class="delivery d-flex flex-column flex-start">
+                            <h3>Вид доставки</h3>
+                            <div class="check d-flex flex-row flex-start">
+                                <div class="check-content">
+                                    <p>Самовывоз</p>
+                                    <label class="checkBox">
+                                        <input id="ch1" type="checkbox">
+                                        <div class="transition"></div>
+                                    </label>
+                                </div>
+                                <div class="check-content">
+                                    <p>Доставка</p>
+                                    <label class="checkBox">
+                                        <input id="ch1" type="checkbox">
+                                        <div class="transition"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="pay d-flex flex-column flex-start">
+                            <h3>Способ оплаты</h3>
+                            <div class="check d-flex flex-row flex-start">
+                                <div class="check-content">
+                                    <p>Наличными</p>
+                                    <label class="checkBox">
+                                        <input id="ch1" type="checkbox">
+                                        <div class="transition"></div>
+                                    </label>
+                                </div>
+                                <div class="check-content">
+                                    <p>Онлайн оплата</p>
+                                    <label class="checkBox">
+                                        <input id="ch1" type="checkbox">
+                                        <div class="transition"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="address d-flex flex-column flex-start">
+                            <h3>Адрес доставки</h3>
+                            <div class="city d-flex flex-column flex-start">
+                                <label for="city">Город</label>
+                                <select name="city" id="city">
+                                    <option value="1">Ашхабад</option>
+                                    <option value="">Анау</option>
+                                    <option value="">Балканабад</option>
+                                    <option value="">Мары</option>
+                                    <option value="">Туркменабад</option>
+                                    <option value="">Дашогуз</option>
+                                </select>
+                            </div>
+                            <div class="address2 d-flex flex-column flex-start">
+                                <label for="address2">Адрес</label>
+                                <input type="text" name="address2" id="address2"
+                                    placeholder="пр. С.Туркменбаши, 25/22 ">
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="form-contacts d-flex flex-column flex-start">
+                            <h3>Ваши контакты</h3>
+                            <div class="user-name d-flex flex-column flex-start">
+                                <label for="user-name">Фамилия, имя</label>
+                                <input type="text" name="user-name" id="user-name" placeholder="Дурды Дурдыев">
+                            </div>
+                            <div class="user-phone d-flex flex-column flex-start">
+                                <label for="user-phone">Номер телефона</label>
+                                <div class="phone d-flex flex-row">
+                                    <input type="number" name="user-phone" id="user-phone"
+                                        placeholder="+993 65 65 65 55">
+                                    <button><img src="./images/help.svg" alt="?"></button>
+                                </div>
+                            </div>
+                            <div class="user-instagram d-flex flex-column flex-start">
+                                <label for="user-instagram">Вы в Instagram</label>
+                                <div class="insta d-flex flex-row">
+                                    <input type="text" name="user-instagram" id="user-instagram"
+                                        placeholder="@home_decor_tm">
+                                    <button><img src="./images/help.svg" alt="?"></button>
+                                </div>
+                            </div>
+                            <div class="user-mail d-flex flex-column flex-start">
+                                <label for="user-mail">E-mail (вышлем подтверждение заказа)</label>
+                                <input type="email" name="user-mail" id="user-mail" placeholder="info@homedecortm.com">
+                            </div>
+                            <div class="user-comment d-flex flex-column flex-start">
+                                <label for="user-comment">Комментарий</label>
+                                <textarea name="user-comment" id="user-comment" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="gift-number d-flex flex-column flex-start">
+                                <label for="">Номер подарочного сертификата</label>
+                                <div class="gift-help d-flex flex-row">
+                                    <input type="number" id="gift-number" placeholder="25 45 85 65">
+                                    <button><img src="./images/help.svg" alt="?"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="total d-flex flex-row flex-start">
+                    <p class="total-text">Итого:</p>
+                    <p class="total-number">750 ман.</p>
+                </div>
+                <div class="order-button">
+                    <button type="submit">Оформить заказ</button>
+                </div>
+                <div class="info">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Что происходит после оформления заказа?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Время работы
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Как происходит оплата
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Доставка
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Сроки
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Упаковка
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                    aria-controls="flush-collapseSeven">
+                                    На какой бумаге печать
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                    aria-controls="flush-collapseEight">
+                                    Какие рамы мы продаем
+                                </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Рамы сделаны из ДВП, поэтому они не тяжелые.</li>
+                                        <li>Защитный лист из пластика, он безопасен, тк невозможно разбить. Также он не
+                                            искажает изображение.</li>
+                                        <li>В комплекте идет накладное паспарту, которое можно не использовать.</li>
+                                        <li>Рамки можно повесить как горизонтально, так и вертикально.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                    aria-controls="flush-collapseNine">
+                                    Паспарту
+                                </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="adv">
+            <div class="adv-content">
+                <img src="./images/adv.jpg" alt="adv">
+                <p class="adv-text">Здесь могла бы быть ваша реклама</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex flex-column">
+        <div class="footer-content flex-wrap">
+            <img src="./images/homedecor logo 1.svg" alt="logo">
+            <div class="footer-links">
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/About us icon.svg" alt="About us">
+                    <a href="">О нас</a>
+                </div>
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/image.svg" alt="image">
+                    <a href="">Рамы и крепления</a>
+                </div>
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/image-rectangle.svg" alt="reviews">
+                    <a href="">Отзывы</a>
+                </div>
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/Prices icon.svg" alt="prices">
+                    <a href="">Цены</a>
+                </div>
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/social icon.svg" alt="social">
+                    <a href="">Сотрудничество</a>
+                </div>
+                <div class="footer-link d-flex flex-row">
+                    <img src="./images/Dostawka icon.svg" alt="delivery">
+                    <a href="">Доставка и оплата</a>
+                </div>
+            </div>
+            <div class="footer-contacts d-flex flex-column">
+                <p>Контакты</p>
+                <div class="contacts-content d-grid">
+                    <div class="contact-item">
+                        <img src="./images/Tel1 icon.svg" alt="phone">
+                        <p>+993 12 94 52 40</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/email icon.svg" alt="email">
+                        <p>homedecortm@yandex.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/fax icon.svg" alt="fax">
+                        <p>+993 12 94 52 41</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/mail-favourite.svg" alt="mail">
+                        <p>info@homedecortm.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/tel2 icon.svg" alt="phone">
+                        <p>+993 62 07 53 35</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="./images/imo icon.svg" alt="imo">
+                        <p>+993 62 07 53 35</p>
+                    </div>
+                    <div class="map">
+                        <img src="./images/map-03.svg" alt="map">
+                        <p>пр. С.Туркменбаши, 25/22 г.Ашхабад, 744005, Туркменистан</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="terms d-flex flex-row">
+            <img src="./images/book-info.svg" alt="terms of use">
+            <a href="">Пользовательское соглашение</a>
+        </div>
+    </footer>
+
+    <script>
+        function Nav() {
+            var width = document.getElementById("mySidenav").style.width;
+            if (width === "0px" || width == "") {
+                document.getElementById("mySidenav").style.width = "250px";
+                $('.animated-icon').toggleClass('open');
+            }
+            else {
+                document.getElementById("mySidenav").style.width = "0px";
+                $('.animated-icon').toggleClass('open');
+            }
+        }
+    </script>
+</body>
+
+</html>

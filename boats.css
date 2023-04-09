@@ -1,0 +1,391 @@
+:root {
+  --header: #F5E7D3;
+  --text-color: #28303F;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/CRC25.woff") format("woff");
+}
+@font-face {
+  font-family: "New-YorkerC";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/3473-font.ttf") format("ttf");
+}
+@media screen and (max-width: 1600px) {
+  .boats {
+    flex-wrap: wrap;
+  }
+  .news-content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news-content > img {
+    width: 230px;
+    height: 230px;
+    padding: 5px;
+  }
+  .news-content {
+    padding: 0;
+  }
+  .gift {
+    display: none;
+  }
+  .gift2 {
+    display: block;
+    text-align: center;
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .news-content > img {
+    width: 326px;
+    height: 326px;
+    padding: 22px 17px;
+  }
+  .news-content {
+    padding: 0 10%;
+  }
+  .gift {
+    display: flex;
+    padding: 3%;
+  }
+  .gift2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  .gift2 {
+    width: 75%;
+  }
+  .set-prices {
+    width: 300px;
+  }
+  .carousel {
+    width: 300px;
+    margin: 15%;
+  }
+  .info {
+    width: 300px;
+  }
+  .gift2 {
+    margin: 15%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .gift {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .gift {
+    height: 200px;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo2 {
+    display: none;
+  }
+  .header {
+    padding: 1% 10%;
+  }
+  .boats {
+    padding: 40px 10%;
+  }
+  .boats-content {
+    align-items: flex-start;
+  }
+  .picture > img {
+    width: 100%;
+  }
+  .set-prices {
+    width: 390px;
+  }
+  .set-elements {
+    gap: 50px;
+    justify-content: flex-start;
+  }
+  .accordion-button,
+  .accordion-body {
+    width: 700px;
+  }
+  .boats-content > p {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .logo2 {
+    display: block;
+    width: 50px;
+  }
+  .header-elements1 {
+    gap: 70%;
+  }
+  .header {
+    gap: 20px;
+    padding: 2%;
+  }
+  .boats {
+    padding: 40px 0%;
+  }
+  .boats-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .picture > img {
+    width: 70%;
+  }
+  .set-elements {
+    gap: 0;
+    justify-content: center;
+  }
+  .accordion-button,
+  .accordion-body {
+    width: 350px;
+  }
+  .boats-content > p {
+    margin: 0 10%;
+  }
+}
+body {
+  background-color: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.boats {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  justify-content: center;
+}
+
+.boats-content {
+  gap: 30px;
+}
+
+.boats-content > h2 {
+  font-weight: 400;
+  font-size: calc(1.2rem + 0.5vw);
+  line-height: 40px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.boats-content > p {
+  font-weight: 300;
+  font-size: calc(1rem + 0.3vw);
+  line-height: 29px;
+  color: var(--text-color);
+}
+
+.set-pictures,
+.picture {
+  padding: 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.set-pictures {
+  gap: 20px;
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.picture > button {
+  border: none;
+  background: inherit;
+}
+
+.set-prices {
+  padding-top: 30px;
+  gap: 100px;
+}
+
+.set-price-first {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+}
+
+.select {
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 100px;
+  padding: 7px 10px;
+  border: 1px solid #D6D6D6;
+  border-radius: 0.2rem;
+}
+
+.second {
+  gap: 56px;
+}
+
+.second > #size {
+  text-decoration: none;
+}
+
+.form-select {
+  border: none;
+}
+
+.form-select > option {
+  font-weight: 700;
+}
+
+#size {
+  font-weight: 350;
+  font-size: calc(0.9rem + 0.2vw);
+  line-height: 25px;
+  text-decoration: underline;
+  color: var(--text-color);
+  margin: 0;
+}
+
+#add-to-set {
+  background: #7893AD;
+  width: 390px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 10px;
+  gap: 150px;
+}
+
+#add-to-set > p,
+#set > a {
+  font-weight: 700;
+  font-size: clamp(0.7rem, 4vw, 1rem);
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.fourth {
+  margin-top: -25px;
+}
+
+#set {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  gap: 10px;
+  background: #7893AD;
+  border: none;
+}
+
+#set > a {
+  text-decoration: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+}
+
+.accordion-button,
+.accordion-body {
+  font-weight: 350;
+  font-size: calc(1rem + 0.3vw);
+  line-height: 25px;
+  color: var(--black);
+}
+
+.accordion-body > ul > li {
+  font-weight: 350;
+  font-size: clamp(0.6rem, 4vw, 1rem);
+  line-height: 170%;
+  color: var(--black);
+}
+
+.gift {
+  background-image: url("./images/gift.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15%;
+  width: 65%;
+  height: 250px;
+}
+
+.gift > h2 {
+  font-size: calc(0.6rem + 1vw);
+  line-height: 161.5%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.gift > p,
+.gift > a {
+  font-weight: 350;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.gift > p {
+  font-size: calc(0.7rem + 0.5vw);
+  line-height: 25px;
+}
+
+.gift > a {
+  font-size: calc(0.6rem + 0.5vw);
+  line-height: 21px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+}
+
+.new {
+  margin-top: 60px;
+}
+
+.new > h2 {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.news-content {
+  gap: 45px 35px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=boats.css.map */
